@@ -21,5 +21,9 @@ function volume_sphere(e) {
     }
   
 } 
-
-window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
+window.onload = function () {
+  document.getElementById("MyForm").onsubmit = function (e) {
+    volume_sphere(e); // Call the volume_sphere function to calculate and display the volume
+  };
+};
+// window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
