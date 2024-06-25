@@ -1,5 +1,6 @@
 function volume_sphere(e) {
     //Write your code here
+	e.preventDefault()
 	  // Retrieve the radius value entered by the user
     var radiusInput = document.getElementById('radius').value.trim();
 
